@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url('/fonts/Satoshi-Bold.ttf');
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+}
+.form-container {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-left {
+  width: 50%;
+  background: url("/imagen4.png") no-repeat center;
+  background-size: cover;
+}
+
+.form-right {
+  width: 50%;
+  padding: 30px;
+  background: #f8ebe9;
+}
+
+h2 {
+  font-family: 'Satoshi-Bold';
+  color: #3d3a64;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}

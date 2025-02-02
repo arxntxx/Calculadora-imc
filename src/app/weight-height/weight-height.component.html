@@ -1,0 +1,19 @@
+<div class="weight-height">
+  <div class="input-group">
+    <label for="weight">Peso (kg):</label>
+    <div class="input">
+      <button (click)="decreaseWeight()">-</button>
+      <input type="number" [(ngModel)]="weight" (input)="onWeightChange()" />
+      <button (click)="increaseWeight()">+</button>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label for="height">Altura (cm):</label>
+    <div class="input">
+      <button (click)="decreaseHeight()">-</button>
+      <input type="number" [(ngModel)]="height" (input)="onHeightChange()" />
+      <button (click)="increaseHeight()">+</button>
+    </div>
+  </div>
+</div>

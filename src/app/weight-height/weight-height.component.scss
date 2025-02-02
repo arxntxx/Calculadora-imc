@@ -1,0 +1,49 @@
+.weight-height {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+
+}
+
+label {
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: 16px;
+  flex: 1;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap:3px
+}
+
+.input input {
+  width: 70px; 
+  height: 20px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input button {
+  background-color: #31397b;
+  width: 30px;
+  height: 30px;
+  border: none;
+  
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.input button:hover {
+  background-color: #7a95e0;
+}

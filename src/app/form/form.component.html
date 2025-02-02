@@ -1,0 +1,44 @@
+<div class="form">
+  <div class="form-container">
+    <div class="form-left"></div>
+
+    <div class="form-right">
+      <h2>Calculadora IMC</h2>
+
+      <label>Nombre:</label>
+      <input
+        type="text"
+        [(ngModel)]="user.name"
+        placeholder="Introduce tu nombre"
+      />
+
+      <label>Sexo:</label>
+      <input
+        type="radio"
+        name="gender"
+        value="Hombre"
+        [(ngModel)]="user.gender"
+      />
+      Hombre
+      <input
+        type="radio"
+        name="gender"
+        value="Mujer"
+        [(ngModel)]="user.gender"
+      />
+      Mujer
+
+      <app-weight-height
+        [weight]="user.weight"
+        [height]="user.height"
+        (weightChange)="updateWeight($event)"
+        (heightChange)="updateHeight($event)"
+      >
+      </app-weight-height>
+
+      <app-action-buttons (calculate)="calculate()" (reset)="resetForm()">
+      </app-action-buttons>
+    </div>
+  </div>
+  <app-results [results]="results"></app-results>
+</div>
